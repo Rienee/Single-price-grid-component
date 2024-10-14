@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700&display);
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    font-size: 16px;
+    font-family: 'karla', sans-serif;
+    min-height: 100vh;
+    padding-top: 20px;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    line-height: 28px;
+}
+.container {
+    background-color: #fff;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+    margin: auto;
+    overflow: hidden;
+    max-width: 800px;
+    
+}
+.join {
+    padding: 35px;
+}
+h2 {
+    color: hsl(179,62%,43%);
+    opacity: 0.9;
+}
+.join h3 {
+    font-weight: bold;
+    color: hsl(71,73%,54%);
+    opacity: 0.9;
+}
+.join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 30px;
+}
+.why {
+    background-color: hsl(179, 62%, 52%);
+    color:  #fff;
+    padding: 40px;
+}
+.why h2 {
+    color: #fff;
+}
+.subscribtion {
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    color:  #fff;
+}
+.subscribtion h2 {
+    color: #fff;
+}
+.column {
+    display: flex;
+}
+.column > section {
+    flex: 1;
+}
+h3.tag {
+    color: hsl(179, 43%, 65%);
+    display: flex;
+    align-items: center;
+}
+h3.tag span {
+    color: #fff;
+    font-size: 45px;
+}
+button {
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+    color: #fff;
+    font-family: 'karla', sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .why, .subscribtion {
+        width: 50%;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .join {
+        padding-right: 20px;
+    }
+    .why, .subscribtion {
+        width: 100%;
+    }
+}
